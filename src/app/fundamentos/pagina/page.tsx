@@ -1,22 +1,24 @@
-import Cabecalho from "@/components/Cabecalho"
-import Conteudo from "@/components/Conteudo"
-import Rodape from "@/components/Rodape"
+'use client';
+import '@/app/globals.css'
+import Pagina from "@/components/Pagina"
 
 const Page = () => {
+
+    const executar = () => {
+        console.log('O botão foi pressionado!!')
+    }
+
     return (
-        <div className={`
-            flex flex-col
-            h-screen
-            gap-4
-            p-4
-        `} >
-            <Cabecalho />
-            <Conteudo />
-            <Rodape 
-                textoDireita="Feito com ❤️ por Eudes" 
-                textoEsquerda="2021"
-            />
-        </div>
+        <Pagina titulo="Minha Página" subtitulo="Estou na pasta App">
+            <button 
+                onClick={() =>  {
+                    executar()
+                }}
+                className="bg-blue-500 p-2 rounded-md" 
+            >
+                Teste
+            </button>
+        </Pagina>
     )
 }
 

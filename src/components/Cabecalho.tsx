@@ -1,12 +1,20 @@
-const Cabecalho = (props: any) => {
+interface CabecalhoProps {
+    titulo: string
+    subtitulo: string
+    className?: string
+    [prop: string]: any
+} 
+
+const Cabecalho = (props: CabecalhoProps) => {
+    console.log(props)
     return (
         <div className={`
             flex 
             flex-col
             justify-center items-center 
             text-3xl
-            h-36
             rounded-lg bg-purple-500 
+            ${props.className ?? ''}
         `}>
             {props.titulo}
             <div className={`

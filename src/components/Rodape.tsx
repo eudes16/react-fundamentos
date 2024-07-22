@@ -9,9 +9,10 @@ const Rodape = (props: any) => {
         <div className={`
             flex flex-row justify-between items-center
             h-20
-            rounded-lg
-            bg-cyan-600
-            text-xl
+            bg-zinc-800
+            border-t border-zinc-700
+            text-base
+            text-zinc-500
             p-4
             ${props.className ?? ''}
         `}>

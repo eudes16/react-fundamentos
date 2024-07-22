@@ -3,27 +3,32 @@ interface CabecalhoProps {
     subtitulo: string
     className?: string
     [prop: string]: any
-} 
+}
 
 const Cabecalho = (props: CabecalhoProps) => {
-    console.log(props)
     return (
         <div className={`
-            flex 
-            flex-col
-            justify-center items-center 
-            text-3xl
-            rounded-lg bg-purple-500 
-            ${props.className ?? ''}
-        `}>
-            {props.titulo}
+                flex flex-col
+                justify-center
+                p-2
+                ${props.className ?? ''}
+            `}
+        >
             <div className={`
-                text-lg
+                flex-col 
+                text-2xl
+            `}>
+                {props.titulo}
+            </div>
+            <div className={`
+                text-sm
                 font-thin
+                text-zinc-500
             `}>
                 {props.subtitulo}
             </div>
         </div>
+
     )
 }
 

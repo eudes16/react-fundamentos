@@ -1,3 +1,5 @@
+import Pagina from "@/components/Pagina"
+
 const Page = () => {
     const renderizarTitulo = () => {
         return <h1>Funções</h1>
@@ -14,10 +16,10 @@ const Page = () => {
     }
 
     return (
-        <div>
+        <Pagina titulo="JSX: Chamando Funções" subtitulo="Fundamentos">
             {renderizarTitulo()}
             {renderizarConteudo()}
-        </div>
+        </Pagina>
     )
 }
 

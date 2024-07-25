@@ -1,0 +1,229 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .text-balance {
+      text-wrap: balance;
+    }
+
+    @keyframes btn-click {
+        0% {
+            opacity: 1;
+            transform: scale(1);
+        }
+    
+        100% {
+            opacity: 0;
+            transform: scale(0.6);
+        }
+    }
+  
+    /* Base colors */
+    /* Primary */
+    .primary {
+      @apply bg-purple-700;
+    }
+  
+    .primary-light {
+      @apply bg-purple-500;
+    }
+  
+    .primary-dark {
+      @apply bg-purple-900;
+    }
+  
+    .primary-text-contrast {
+      @apply text-white;
+    }
+
+    .primary-outline {
+        @apply border-purple-700;
+    }
+
+    .primary-bg-outline {
+        @apply bg-purple-700/30;
+    }
+  
+    /* Secondary */
+    .secondary {
+      @apply bg-orange-700;
+    }
+  
+    .secondary-lighter {
+      @apply bg-orange-500;
+    }
+  
+    .secondary-darker {
+      @apply bg-orange-900;
+    }
+
+    .secondary-outline {
+        @apply border-orange-700;
+    }
+
+    .secondary-bg-outline {
+        @apply bg-orange-700/30;
+    }
+  
+    .secondary-text-contrast {
+      @apply text-white;
+    }
+  
+    /* Default */
+    .default {
+        @apply bg-teal-700;
+    }
+
+    .default-light {
+        @apply bg-teal-500;
+    }
+
+    .default-dark {
+        @apply bg-teal-900;
+    }
+
+    .default-text-contrast {
+        @apply text-white;
+    }
+
+    /* Success */
+    .success {
+        @apply bg-green-700;
+    }
+
+    .success-light {
+        @apply bg-green-500;
+    }
+
+    .success-dark {
+        @apply bg-green-900;
+    }
+
+    .success-text-contrast {
+        @apply text-white;
+    }
+
+    /* Info */
+    .info {
+        @apply bg-blue-700;
+    }
+
+    .info-light {
+        @apply bg-blue-500;
+    }
+
+    .info-dark {
+        @apply bg-blue-900;
+    }
+
+    .info-text-contrast {
+        @apply text-white;
+    }
+
+    /* Warning */
+    .warning {
+        @apply bg-amber-400;
+    }
+
+    .warning-light {
+        @apply bg-amber-200;
+    }
+
+    .warning-dark {
+        @apply bg-amber-500;
+    }
+
+    .warning-text-contrast {
+        @apply text-amber-950;
+    }
+
+    /* Danger */
+    .danger {
+        @apply bg-red-700;
+    }
+
+    .danger-light {
+        @apply bg-red-500;
+    }
+
+    .danger-dark {
+        @apply bg-red-900;
+    }
+
+    .danger-text-contrast {
+        @apply text-white;
+    }
+    
+    .primary-color {
+      @apply primary text-white;
+    }
+    
+    .primary-color-lighter {
+      @apply primary-light text-white;
+    }
+  
+    .primary-color-darker {
+      @apply primary-dark text-white;
+    }
+  
+    .secondary-color {
+      @apply secondary text-white;
+    }
+  
+    .secondary-color-lighter {
+      @apply secondary-lighter text-white;
+    }
+  
+    .secondary-color-darker {
+      @apply secondary-darker text-white;
+    }
+
+    .default-color {
+        @apply default text-white;
+    }
+
+    .default-color-lighter {
+        @apply default-light text-white;
+    }
+
+    .default-color-darker {
+        @apply default-dark text-white;
+    }
+
+    .info-color {
+        @apply info text-white;
+    }
+
+    .info-color-lighter {
+        @apply info-light text-white;
+    }
+
+    .info-color-darker {
+        @apply info-dark text-white;
+    }
+
+    .warning-color {
+        @apply warning text-black;
+    }
+
+    .warning-color-lighter {
+        @apply warning-light text-black;
+    }
+
+    .warning-color-darker {
+        @apply warning-dark text-black;
+    }
+
+    .danger-color {
+        @apply danger text-white;
+    }
+
+    .danger-color-lighter {
+        @apply danger-light text-white;
+    }
+
+    .danger-color-darker {
+        @apply danger-dark text-white;
+    }
+}

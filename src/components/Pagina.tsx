@@ -3,7 +3,13 @@ import Cabecalho from "./Cabecalho"
 import Conteudo from "./Conteudo"
 import Rodape from "./Rodape"
 
-const Pagina = (props: any) => {
+interface PaginaProps {
+    titulo: string
+    subtitulo: string
+    children: any
+}
+
+const Pagina = (props: PaginaProps) => {
     return <>
         <div className="flex h-screen">
             <AreaLateral />

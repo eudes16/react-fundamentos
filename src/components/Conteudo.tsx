@@ -8,7 +8,7 @@ const Conteudo = (props: ConteudoProps) => {
         <div className={`
             flex justify-start items-start flex-1 flex-col p-2
             bg-zinc-800
-            text-3xl
+            text-base
             ${props.className ?? ''}
         `}>
             {props.children}

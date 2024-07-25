@@ -17,13 +17,14 @@ const Cabecalho = (props: CabecalhoProps) => {
             <div className={`
                 flex-col 
                 text-2xl
+                font-bold
             `}>
                 {props.titulo}
             </div>
             <div className={`
                 text-sm
                 font-thin
-                text-zinc-500
+                text-zinc-300
             `}>
                 {props.subtitulo}
             </div>

@@ -12,14 +12,13 @@ const AreaLateral = (props: AreaLateralProps) => {
     return <div
         className={`
             ${props.componentName ?? componentName}
-            px-2
             bg-zinc-900
         `}
     >
         <div className={`
+            h-16
             flex items-center justify-center
             container-logo
-            h-24
         `}
         >
             <Logo />

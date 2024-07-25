@@ -487,4 +487,29 @@
         @apply text-field;
         @apply secondary-outline;
     }
+
+    .text-field-success {
+        @apply text-field;
+        @apply success-outline;
+    }
+
+    .text-field-info {
+        @apply text-field;
+        @apply info-outline;
+    }
+
+    .text-field-default {
+        @apply text-field;
+        @apply default-outline;
+    }
+
+    .text-field-warning {
+        @apply text-field;
+        @apply warning-outline;
+    }
+
+    .text-field-danger {
+        @apply text-field;
+        @apply danger-outline;
+    }
   }

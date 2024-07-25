@@ -1,11 +1,11 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
-  "/componente/titulo/page": "app/componente/titulo/page.js",
   "/componente/basico/page": "app/componente/basico/page.js",
-  "/fundamentos/pagina/page": "app/fundamentos/pagina/page.js",
+  "/componente/titulo/page": "app/componente/titulo/page.js",
   "/componente/trecho/page": "app/componente/trecho/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/page": "app/page.js",
+  "/fundamentos/pagina/page": "app/fundamentos/pagina/page.js",
   "/fundamentos/funcoes/page": "app/fundamentos/funcoes/page.js",
-  "/fundamentos/soma/page": "app/fundamentos/soma/page.js"
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/fundamentos/soma/page": "app/fundamentos/soma/page.js",
+  "/page": "app/page.js"
 }

@@ -1,9 +1,1 @@
-{
-  "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
-  "/estado/campotexto": "pages/estado/campotexto.js",
-  "/estado/com": "pages/estado/com.js",
-  "/estado/sem": "pages/estado/sem.js",
-  "/pagina1": "pages/pagina1.js",
-  "/_document": "pages/_document.js"
-}
+{"/_app":"pages/_app.js","/estado/campotexto":"pages/estado/campotexto.html","/estado/com":"pages/estado/com.html","/estado/sem":"pages/estado/sem.html","/pagina1":"pages/pagina1.html","/_error":"pages/_error.js","/_document":"pages/_document.js","/404":"pages/404.html"}

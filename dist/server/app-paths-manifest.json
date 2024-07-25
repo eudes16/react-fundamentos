@@ -3,9 +3,9 @@
   "/componente/basico/page": "app/componente/basico/page.js",
   "/componente/titulo/page": "app/componente/titulo/page.js",
   "/componente/trecho/page": "app/componente/trecho/page.js",
-  "/fundamentos/pagina/page": "app/fundamentos/pagina/page.js",
-  "/fundamentos/funcoes/page": "app/fundamentos/funcoes/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/fundamentos/funcoes/page": "app/fundamentos/funcoes/page.js",
+  "/fundamentos/pagina/page": "app/fundamentos/pagina/page.js",
   "/fundamentos/soma/page": "app/fundamentos/soma/page.js",
   "/page": "app/page.js"
 }

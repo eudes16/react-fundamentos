@@ -1,0 +1,9 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/estado/campotexto": "pages/estado/campotexto.js",
+  "/estado/com": "pages/estado/com.js",
+  "/estado/sem": "pages/estado/sem.js",
+  "/pagina1": "pages/pagina1.js",
+  "/_document": "pages/_document.js"
+}

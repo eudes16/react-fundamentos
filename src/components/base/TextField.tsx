@@ -11,7 +11,6 @@ interface TextFieldProps {
 
 const TextField = (props: TextFieldProps) => {
     const { label, value, onChange, prefix, sufix} = props
-    
 
     return (
         <div className="flex flex-col">
@@ -22,7 +21,7 @@ const TextField = (props: TextFieldProps) => {
                         {prefix}
                     </div>) : null}
                     <input
-                        {...props}
+                        // {..._props}
                         value={value}
                         onChange={onChange}
                         className={`

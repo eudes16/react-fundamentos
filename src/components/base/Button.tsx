@@ -1,4 +1,4 @@
-import { BaseColor, BaseProps, ButtonElevation, ButtonVariant, elevationProps, variantProps } from "./TBase"
+import { BaseColor, BaseProps, ButtonElevation, buttonsColors, ButtonVariant, elevationProps, variantProps } from "./TBase"
 
 interface ButtonProps extends BaseProps {
     text: string
@@ -26,7 +26,7 @@ const Button = (props: ButtonProps) => {
             onClick={_onClick}
             className={`
                 overflow-hidden
-                ${variantProps[variant ??  'filled']}${color ?? 'primary'}
+                ${buttonsColors(color ?? 'primary', variant ?? 'filled')}
                 ${elevationProps[elevation ?? 0]}
                 p-2
                 text-base

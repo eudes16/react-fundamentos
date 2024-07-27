@@ -23,3 +23,65 @@ export interface BaseProps {
     color?: BaseColor
     [prop: string]: any
 }
+
+export const TextFieldColors = {
+    primary: 'text-field-primary',
+    secondary: 'text-field-secondary',
+    default: 'text-field-default',
+    success: 'text-field-success',
+    danger: 'text-field-danger',
+    warning: 'text-field-warning',
+    info: 'text-field-info',
+}
+
+const butonTextColors = {
+    primary: 'btn-text-primary',
+    secondary: 'btn-text-secondary',
+    default: 'btn-text-default',
+    success: 'btn-text-success',
+    danger: 'btn-text-danger',
+    warning: 'btn-text-warning',
+    info: 'btn-text-info',
+}
+
+const buttonFilledColors = {
+    primary: 'btn-primary',
+    secondary: 'btn-secondary',
+    default: 'btn-default',
+    success: 'btn-success',
+    danger: 'btn-danger',
+    warning: 'btn-warning',
+    info: 'btn-info',
+}
+
+const buttonOutlinedColors = {
+    primary: 'btn-outline-primary',
+    secondary: 'btn-outline-secondary',
+    default: 'btn-outline-default',
+    success: 'btn-outline-success',
+    danger: 'btn-outline-danger',
+    warning: 'btn-outline-warning',
+    info: 'btn-outline-info',
+}
+
+export const buttonsColors = (color: BaseColor, variantProps: ButtonVariant): string => {
+    if (variantProps === 'text') {
+        return butonTextColors[color]
+    }
+
+    if (variantProps === 'outlined') {
+        return buttonOutlinedColors[color]
+    }
+    
+    return buttonFilledColors[color]
+}
+
+export const removeProps = (props: any, keys: string[]) => {
+    const _props = {...props}
+
+    keys.forEach(key => {
+        delete _props[key]
+    })
+
+    return _props
+}

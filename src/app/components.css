@@ -18,10 +18,14 @@
             transform: scale(0.6);
         }
     }
+
+    .default-animation {
+        @apply transition ease-in-out duration-300;
+    }
   
     /* Base colors */
     .text-default {
-        @apply text-zinc-900;
+        @apply text-white;
     }
 
     .outline-base {
@@ -256,6 +260,18 @@
       @apply secondary-darker text-white;
     }
 
+    .success-color {
+        @apply success text-white;
+    }
+
+    .success-color-lighter {
+        @apply success-light text-white;
+    }
+
+    .success-color-darker {
+        @apply success-dark text-white;
+    }
+
     .default-color {
         @apply default text-white;
     }
@@ -305,12 +321,13 @@
     }
   
     [disabled] {
-      @apply disabled:opacity-50 disabled:bg-zinc-400 disabled:cursor-not-allowed;
-      @apply disabled:text-zinc-600  disabled:hover:text-zinc-600 disabled:hover:bg-zinc-400;
+        @apply disabled:opacity-50 disabled:bg-zinc-400 disabled:cursor-not-allowed;
+        @apply disabled:text-zinc-600  disabled:hover:text-zinc-600 disabled:hover:bg-zinc-400;
     }
     
     .btn {
-      @apply font-bold cursor-pointer transition duration-700;
+        @apply font-bold cursor-pointer;
+        @apply default-animation;
     }
 
     .btn-active {
@@ -323,11 +340,11 @@
     }
 
     .elevation-1 {
-      @apply shadow-md;
+        @apply shadow-md;
     }
     
     .elevation-2 {
-      @apply shadow-lg;
+        @apply shadow-lg;
     }
 
     .elevation-3 {
@@ -343,15 +360,21 @@
     }
 
     .btn-primary {
-      @apply btn;
-      @apply primary-color ;
-      @apply hover:primary-color-lighter focus:primary-color-darker;
+        @apply btn;
+        @apply primary-color ;
+        @apply hover:primary-color-lighter focus:primary-color-darker;
     }
   
     .btn-secondary {
-      @apply btn;
-      @apply secondary-color;
-      @apply hover:secondary-color-lighter focus:secondary-color-darker;
+        @apply btn;
+        @apply secondary-color;
+        @apply hover:secondary-color-lighter focus:secondary-color-darker;
+    }
+
+    .btn-success {
+        @apply btn;
+        @apply success-color;
+        @apply hover:success-color-lighter focus:success-color-darker;
     }
 
     .btn-default {
@@ -379,7 +402,7 @@
     }
 
     .btn-outline {
-        @apply border-2 transition duration-700;
+        @apply border-2 default-animation;
     }
 
     .btn-outline-primary {
@@ -418,32 +441,15 @@
         @apply hover:danger-bg-outline focus:danger-color-darker;
     }
 
-    
-    .text-field-container:has(.text-field-primary):focus-within {
-        @apply primary-outline;
-    }
-
-    .text-field-container:has(.text-field-primary):focus-within label {
-        @apply primary-text;
-    }
-
-    .text-field-container:has(.text-field-secondary):focus-within {
-        @apply secondary-outline;
-    }
-
-    .text-field-label:has(.text-field-secondary):focus-within {
-        @apply secondary-text;
-    }
-
     .text-field-container {
         @apply border-2 rounded-md;
-        @apply transition duration-700;
+        @apply default-animation;
         @apply outline-base;
         @apply flex flex-row gap-0;
     }
 
     .text-field-label {
-        @apply font-medium transition duration-700;
+        @apply font-medium default-animation;
         @apply text-sm;
         @apply ps-1;
     }
@@ -511,5 +517,46 @@
     .text-field-danger {
         @apply text-field;
         @apply danger-outline;
+    }
+
+    .text-field-container:has(.text-field-primary):focus-within {
+        @apply primary-outline;
+    }
+
+    .text-field-label:has(.text-field-primary):focus-within span.label {
+        @apply primary-text;
+    }
+
+    .text-field-container:has(.text-field-secondary):focus-within {
+        @apply secondary-outline;
+    }
+
+    .text-field-label:has(.text-field-secondary):focus-within span.label {
+        @apply secondary-text;
+    }
+
+    .text-field-container:has(.text-field-success):focus-within {
+        @apply success-outline;
+    }
+
+    .text-field-label:has(.text-field-success):focus-within span.label {
+        @apply success-text;
+    }
+
+    .text-field-label:has(.text-field-warning):focus-within span.label {
+        @apply default-animation;
+        @apply warning-text;
+    }
+
+    .text-field-container:has(.text-field-warning):focus-within {
+        @apply warning-outline;
+    }
+
+    .text-field-container:has(.text-field-danger):focus-within {
+        @apply danger-outline;
+    }
+
+    .text-field-label:has(.text-field-danger):focus-within span.label {
+        @apply danger-text;
     }
   }
